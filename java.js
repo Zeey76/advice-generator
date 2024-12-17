@@ -1,5 +1,6 @@
 const advice = document.querySelector(".quote");
-const id = document.querySelector(".id-number")
+const heading = document.querySelector(".heading")
+const id = document.querySelector(".id-number");
 const button = document.querySelector(".dice");
 
 async function fetchAdvice() {
@@ -12,6 +13,7 @@ async function fetchAdvice() {
         advice.textContent = data.slip.advice;
     } catch (error) {
         console.error('Error:', error);
+        heading.style.display = "none";
         advice.textContent = "Oops! Something went wrong. Try again!";
     }
 }
