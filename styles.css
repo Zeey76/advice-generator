@@ -67,7 +67,7 @@ button {
     cursor: pointer;
 }
 
-.dice:hover {
+.dice:active {
     box-shadow: 
     0 0 10px 4px hsl(150, 100%, 66%, 0.7),
     0 0 20px 10px hsl(150, 100%, 66%, 0.3),
